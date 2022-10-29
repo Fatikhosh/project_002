@@ -1,0 +1,26 @@
+#include <studio.h>
+#pragma warning(disable 4996)
+Int main()
+{
+Char a = getchar();
+Char b = getchar();
+Char c = getchar();
+
+If a>b {
+   If a>c
+   Printf(" a = max ");
+
+   Else if c>a
+   Printf(" c = max ");
+} 
+Else if a<b{
+    If b>c
+    Printf("b = max");
+
+    If b<c
+    Printf ("c = max");
+}
+
+Getchar();
+Return 0;
+}
