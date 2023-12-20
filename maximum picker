@@ -1,26 +1,14 @@
-#include <studio.h>
-#pragma warning(disable 4996)
-Int main()
+#include <stdio.h>
+int main()
 {
-Char a = getchar();
-Char b = getchar();
-Char c = getchar();
-
-If a>b {
-   If a>c
-   Printf(" a = max ");
-
-   Else if c>a
-   Printf(" c = max ");
-} 
-Else if a<b{
-    If b>c
-    Printf("b = max");
-
-    If b<c
-    Printf ("c = max");
-}
-
-Getchar();
-Return 0;
+int a, b, c, max;
+scanf("%d %d %d", &a, &b, &c);
+if (a >= b && a >= c)
+    max = a;
+else if (b >= a && b >= c)
+    max = b;
+else 
+    max = c;
+printf("the maximum is %d\n", max);
+return 0;
 }
